@@ -1,6 +1,6 @@
 package Vererbung.KlassenUndObjekte;
 
-public class car extends Fahrzeug {
+public class car extends Fahrzeug  {
 
 
     private int numberOfDoors;
