@@ -14,24 +14,6 @@ public class Fahrzeug {
         porsche.setNumberOfDoors(2);
 
         car porsche2 = new car();
-        porsche.setBuildYear(2016);
-        porsche.setCarBrand("prosche");
-        porsche.setCarModel("GT3 RS");
-        porsche.setNumberOfDoors(2);
-
-        car porsche3 = new car();
-        porsche.setBuildYear(2016);
-        porsche.setCarBrand("prosche");
-        porsche.setCarModel("GT3 RS");
-        porsche.setNumberOfDoors(2);
-
-        car porsche4 = new car();
-        porsche.setBuildYear(2016);
-        porsche.setCarBrand("prosche");
-        porsche.setCarModel("GT3 RS");
-        porsche.setNumberOfDoors(2);
-
-        car porsche5 = new car();
         porsche2.setBuildYear(1942);
         porsche2.setCarModel("PzKw VIII Maus");
         porsche2.setNumberOfDoors(0);
@@ -39,7 +21,6 @@ public class Fahrzeug {
 
         printFahrzeug(porsche);
         printFahrzeug(porsche2);
-
 
     }
 
