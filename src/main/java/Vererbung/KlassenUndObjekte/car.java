@@ -12,7 +12,7 @@ public class car extends Fahrzeug {
     @Override
     public String toString() {
 
-        return super.getCarBrand() +" "+ super.getCarModel() +" "+ super.getBuildYear() + " " + numberOfDoors;
+        return " Autohersteller: " + super.getCarBrand() +", Modell: "+ super.getCarModel() +", Baujahr: "+ super.getBuildYear() + ", Anzahl Türen: " + numberOfDoors;
     }
 
     public void setNumberOfDoors(int numberOfDoors) {
