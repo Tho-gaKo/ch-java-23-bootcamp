@@ -1,7 +1,7 @@
 package Vererbung.JavaInterfaces;
 
 public class MediaController {
-    void playMedia(Playable x) {
-
+    public void playMedia(Playable media) {
+        media.play();
     }
 }
