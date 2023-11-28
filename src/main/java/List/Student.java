@@ -7,7 +7,7 @@ import lombok.Setter;
 
 @Setter
 @Getter
-public class Students {
+public class Student {
 
     private String firstName;
     private String lastName;
@@ -24,5 +24,14 @@ public class Students {
 
     public void setStudentNumber(int studentNumber) {
         this.studentNumber = studentNumber;
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", studentNumber=" + studentNumber +
+                '}';
     }
 }
