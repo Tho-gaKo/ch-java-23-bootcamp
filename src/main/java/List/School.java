@@ -5,7 +5,9 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @Getter
 @Setter
@@ -13,10 +15,10 @@ import java.util.List;
 
 public class School {
 
-    private List<Student> students = new ArrayList<>();
+    private Map<Integer, Student> students = new HashMap<>();
 
     public void addStudent(Student student) {
-        students.add(student);
+        students.put(student.getStudentNumber(), student);
 
     }
 
