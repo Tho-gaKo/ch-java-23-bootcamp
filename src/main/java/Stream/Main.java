@@ -8,12 +8,33 @@ public class Main {
     public static void main(String[] args) {
 
         List<Integer> numList = new ArrayList<>();
-        numList.add(1);
-        numList.add(2);
-        numList.add(3);
-        numList.add(54);
+        for (int i =0; i <= 9; i++){
+            numList.add((int)(Math.random()*1000 +1));
+        }
 
-        numList.stream().filter(n -> n% 2  == 0).map(n -> n * 2).forEach(System.out::println);
+        numList.stream()
+                .filter(n -> n% 2  == 0)
+                .map(n -> n * 2)
+                .sorted()
+                .forEach(System.out::println);
+
+        int sum = numList.stream()
+                .filter(n -> n% 2  == 0)
+                .map(n -> n * 2)
+                .sorted()
+                .reduce(0,Integer::sum);
+
+        System.out.print("sum : "+sum);
+        System.out.println("");
+
+        List<Integer> newNum;
+        newNum = new ArrayList<>(numList);
+
+        newNum.stream()
+                .filter(n -> n%2 == 0)
+                .map(n -> n*2)
+                .sorted()
+                .forEach(System.out::println);
 
 
 
