@@ -1,5 +1,6 @@
 package Exceptions;
 import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
 
 public class StudentService {
@@ -13,5 +14,18 @@ public class StudentService {
 
     public List<Student> getAllStudents(){
         return repo.getAllStudents();
+    }
+    public Optional<Student> findStudentById(String id) throws Exception{
+        try {
+            return repo.findStudentById(id);
+        }catch (Exception exceptionName) {
+            throw new Exception(exceptionName) ;
+        }
+
+
+        Optional<Student> studentById = repo.findStudentById(id);
+
+
+
     }
 }
