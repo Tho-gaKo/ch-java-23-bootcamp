@@ -23,7 +23,7 @@ public class StudentService {
         }
 
 
-        Optional<Student> studentById = repo.findStudentById(id);
+
 
 
 
