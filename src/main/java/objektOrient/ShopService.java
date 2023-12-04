@@ -7,4 +7,5 @@ public class ShopService {
 
     List<ShopService> shopServiceList = new ArrayList<>();
 
+
 }
